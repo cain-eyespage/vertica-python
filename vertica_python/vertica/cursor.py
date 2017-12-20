@@ -121,7 +121,7 @@ class Cursor(object):
             elif isinstance(self._message, messages.ReadyForQuery):
                 break
             elif isinstance(self._message, messages.CommandComplete):
-                break
+                pass
             else:
                 self.connection.process_message(self._message)
 
